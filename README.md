@@ -1,6 +1,6 @@
 # ICS3U0
 My objective is to build a personal blog that talks about things that I find interesting (graphics, security and privacy). To acheive this goal I must learn the follwing topics: 
-* Css and HTML
+* CSS and HTML
 * JavaScript
 * Rust
 * React
