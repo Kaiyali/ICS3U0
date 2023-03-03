@@ -1,5 +1,5 @@
 # ICS3U0
-My objective is to build a personal blog that talks about things that I find interesting (graphic, security). 
+My objective is to build a personal blog that talks about things that I find interesting (graphics, security, privacy). 
 
 ## Learning Languages and APIs
 
