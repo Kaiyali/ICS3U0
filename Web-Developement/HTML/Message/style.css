@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  margin: 0;
+  background: white;
+  color: #333;
+  padding: 8px 8px;
+  /* I'll give you this one for free */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon{
+    background-color: lavender;
+    color: royalblue;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 8px 8px;
+    display: flex;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.message{
+    background-color: antiquewhite;
+    display: flex;
+    border-radius: 5px;
+    width: 600px;
+    padding: 16px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.close-button{
+    display: flex;
+    padding: 5px 5px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(80, 75, 75);
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.container{
+  margin: 10px 10px;
+}
+
+
+
+
+
+
+

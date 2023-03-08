@@ -1,0 +1,55 @@
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .grid-container {
+        width: 300px;
+        height: 300px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        background-color: #765D69;
+        border: 4px solid #568EA6;
+    }
+    .grid-item {
+        background-color: #305F72; 
+        border: 2px solid #568EA6;
+        color: aliceblue;
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+    }
+    .shade{
+        display: grid;
+        background-color: rgba(61, 34, 110, 0.288);
+        position: absolute;
+        width: 300px;
+        height: 300px;
+    }
+    .movable-box{
+        width: 100px;
+        height: 100px;
+        background-color: #568ea667;
+        grid-row-start: 2;
+        grid-column-start: 2;
+    }
+</style>
+
+<body>    
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>  
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>  
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+        <div class="shade">
+            <div class="movable-box"></div>  
+        </div>            
+        
+    </div>
+</body>
