@@ -1,0 +1,6 @@
+1. Make a good front-end design
+2. Learn how to use DOM and add the given information
+3. Learn how to hash passwords
+
+Maybe:
+4. Make a simple matching password system to check if the password is correct
