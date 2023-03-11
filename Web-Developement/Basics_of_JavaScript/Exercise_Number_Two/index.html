@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name_Maker</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+        body{
+            font-family: 'Open Sans', sans-serif;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin: 0px;
+        }
+        .sidebar{    
+            display: flex; 
+            height: 100px;
+            background-color: bisque;
+            width: 15%;
+            flex-direction: column;
+        }
+        input{
+            border-radius: 2px;   
+            margin-bottom: 10px;
+            background-color: white;
+            height: 25px;
+            border: none;
+            margin: 5px;
+            flex-shrink: 3;
+        }
+        a{
+            margin-right: 10px;
+        }
+        .sidebar > div{
+           display: flex;
+           justify-content: flex-start;
+           align-items: center;
+
+        }
+        div.color{
+            justify-content: space-between;
+        }
+        .submit{
+            background-color: blueviolet;
+            border: none;
+            border-radius: 5px;
+            color: whitesmoke;
+            margin: 5px;
+            width: 100px;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <p class="Word"></p>
+    <div class="sidebar">
+       <div>
+        <a>Word</a>
+        <input type="text" placeholder="Word">
+       </div>
+       <div class="color">
+        <a>Color</a>
+        <input type="color" />
+       </div>
+       <div>
+        <button class="submit">Submit</button>
+       </div>
+    </div>
+</body>
+</html>
