@@ -4,13 +4,85 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript</title>
+    <title>Font Player</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+        body{
+            font-family: 'Open Sans', sans-serif;
+        }
+        h2{
+            display: flex;
+            justify-content: center;
+        }
+        .button-holder{
+            display: flex;
+            justify-content: center;
+        }
+
+        .title{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        button{
+            border-radius: 10px;
+            width: 75px;
+            height: 75px;
+            text-align: center;
+            border: white solid 2px;
+        }
+        button.blue{
+            background-color: royalblue;
+            color: whitesmoke;
+        }
+        button.green{
+            background-color: #17B169;
+            color: whitesmoke;
+        }
+        button.red{
+            background-color: #fd5c63;
+            color: whitesmoke;
+        }
+        button.black{
+            background-color: black;
+            color: whitesmoke;
+        }
+        button.BlueViolet  {
+            background-color: BlueViolet ;
+            color: whitesmoke;
+        }
+        button.Coral{
+            background-color: Coral ;
+            color: whitesmoke;
+        } 
+        .grid{
+            display: inline-grid;
+            grid-template-columns: auto auto auto;
+            column-gap: 5px;
+
+        }
+    </style>
 </head>
 <body>
-    <h2>JavaScript Functions</h2>
-    <p>This example calls a function to convert from Fahrenheit to Celsius:</p>
-    <p id="info"></p>
-    <script>
+    <h2>Learning how to connect JavaScript with HTML</h2>
+    <div class="title">    
+        <p>How to connect with JavaScript files: </p>
+        <p class="info">Daniel Kaiyali</p>    
+    </div>
+    <div class="button-holder">
+        <div class="grid">
+            <button onclick="changeColor('blue')" class="blue">Blue</button>
+            <button onclick="changeColor('green')" class="green">Green</button>
+            <button onclick="changeColor('red')" class="red">Red</button>  
+            <button onclick="changeColor('black')" class="black">Black</button>
+            <button onclick="changeColor('BlueViolet ')" class="BlueViolet ">Violet</button>
+            <button onclick="changeColor('Coral ')" class="Coral ">Coral </button>   
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+    </script>
+
+    <!-- <script>
         const car = {
             year: 2006,
             Owner: "Mark",
@@ -21,8 +93,7 @@
                 " This car also has: " + this.Color + " and was made in " + this.year + "."; 
             }
         };
-        
-        document.getElementById("info").innerHTML = car.giveAll(); 
+        document.getElementById("info").innerHTML = car.giveAll();  -->
     </script>
 </body>
 </html>
