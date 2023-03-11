@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h2>JavaScript Functions</h2>
+    <p>This example calls a function to convert from Fahrenheit to Celsius:</p>
+    <p id="info"></p>
+    <script>
+        const car = {
+            year: 2006,
+            Owner: "Mark",
+            Mileage: 50000,
+            Color: "Black",
+            giveAll: function(){
+                return "This car owned by " + this.Owner + " has been driven for around " +  this.Mileage.toLocaleString("en-US") + "." +
+                " This car also has: " + this.Color + " and was made in " + this.year + "."; 
+            }
+        };
+        
+        document.getElementById("info").innerHTML = car.giveAll(); 
+    </script>
+</body>
+</html>
