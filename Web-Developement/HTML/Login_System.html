@@ -4,39 +4,63 @@
         display: flex;
         justify-content: center;
         align-items: center;
-
+        color: white;
         font-family: 'Open Sans', sans-serif;
     }
 
     .center {
         display: flex;
-        justify-content: center;
-        width: 400px;
-        height: 400px;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        width: 300px;
+        height: 200px;
         background-color: royalblue;
         border-radius: 15px;
     }
-
+    /* The title */
     .login{
         color: aliceblue;
         font-size: 26px;
         padding-right: 10px;
     }
 
-    .username{
-        display: flex;
-        align-items: center;
-        height: 30;
-        width: 100;
+    input{
+        border-radius: 5px;   
+        margin-bottom: 10px;
     }
+
+    .add{
+        display: flex;
+        justify-content: flex-end;
+        width: 250px;
+        
+    }
+    button{
+        width: 52px;
+        border-radius: 5px;
+        border: 0px;
+        background-color: whitesmoke;
+    }
+
+    
+
+    
 </style>            
 
 <body>
     <div class="center">
         <div class="login">Login</div>
-        <div class="username">
+        <div>
            <a>Username: </a>
-           <input type="text">
+           <input type="text" placeholder="Email ">
         </div>
+        <div>
+            <a>Password: </a>
+            <input type="password" placeholder="***">
+         </div>
+         <div class="add">
+             <button>Add</button>
+         </div>
     </div>
 </body>
