@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Name_Maker</title>
+    <title>Name Maker</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
         body{
@@ -16,9 +16,9 @@
         }
         .sidebar{    
             display: flex; 
-            height: 100px;
+            height: 500px;
             background-color: bisque;
-            width: 15%;
+            width: 20%;
             flex-direction: column;
         }
         input{
@@ -30,6 +30,11 @@
             margin: 5px;
             flex-shrink: 3;
         }
+        .color-picker{
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+        }
         a{
             margin-right: 10px;
         }
@@ -37,7 +42,6 @@
            display: flex;
            justify-content: flex-start;
            align-items: center;
-
         }
         div.color{
             justify-content: space-between;
@@ -48,7 +52,8 @@
             border-radius: 5px;
             color: whitesmoke;
             margin: 5px;
-            width: 100px;
+            width: 50%;
+            height: 30px;
             flex-grow: 1;
         }
     </style>
@@ -62,7 +67,7 @@
        </div>
        <div class="color">
         <a>Color</a>
-        <input type="color" />
+        <input class ="color-picker" type="color" />
        </div>
        <div>
         <button class="submit">Submit</button>
