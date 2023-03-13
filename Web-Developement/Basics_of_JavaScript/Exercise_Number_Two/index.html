@@ -11,7 +11,6 @@
             font-family: 'Open Sans', sans-serif;
             display: flex;
             justify-content: flex-end;
-            align-items: center;
             margin: 0px;
         }
         .sidebar{    
@@ -56,14 +55,25 @@
             height: 30px;
             flex-grow: 1;
         }
+        .canvas{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 560px;
+            width: 100%;
+            flex-grow: 1;
+            background-color: whitesmoke;
+        }
     </style>
+    <script src="js/script.js" defer></script>
 </head>
 <body>
-    <p class="Word"></p>
+    <div class="canvas"></div>
     <div class="sidebar">
        <div>
         <a>Word</a>
-        <input type="text" placeholder="Word">
+        <input class = "word" type="text" placeholder="Word">
        </div>
        <div class="color">
         <a>Color</a>
